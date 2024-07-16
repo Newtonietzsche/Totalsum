@@ -1,0 +1,26 @@
+.main_title
+{
+    display: inline-block;
+    padding: 30px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: black; 
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    left: 26%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Style Splitter */
+.vertical-bar {
+width: 2px;
+margin: 1 20px;
+height: 100%;
+background-color: #000;
+}

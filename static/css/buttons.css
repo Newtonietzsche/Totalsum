@@ -1,0 +1,69 @@
+.btn_begin
+{
+    width: 10em;
+    display: block;
+    
+    padding: 20px 10px;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #238011;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+.btn_begin:hover {
+    background-color: #CC0000; 
+    }
+
+/*Style Download button*/
+
+.btn_download    
+{
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #238011;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.btn_download:hover {
+background-color: #CC0000; 
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.buttonLaunch
+{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #CC0000; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.buttonLaunch:hover {
+    background-color: #238011;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI podcast summary </title>
+
+    <link rel="stylesheet" href="../static/css/base.css" />
+    <link rel="stylesheet" href="../static/css/buttons.css" />
+    <link rel="stylesheet" href="../static/css/containers.css" />
+    <link rel="stylesheet" href="../static/css/others.css" />
+    <link rel="stylesheet" href="../static/css/dropdown.css" />
+    <link rel="stylesheet" href="../static/css/select.css" />
+    <link rel="stylesheet" href="../static/css/image.css" />
+    <link rel="stylesheet" href="../static/css/dynamicStyle.css" />
+    <link rel="stylesheet" href="../static/css/loader.css" />
+
+
+    <script src="./static/js/include.js" async></script>
+    <script src="./static/js/test.js" async></script>
+    <script src="./static/js/downloads.js" async></script>
+    <script src="./static/js/save.js" async></script>
+    <script src="./static/js/launchSummerizer.js" async></script>
+    <script src="./static/js/loader.js" async></script>
+
+
+</head>
+
+
+<body>
+    <div id="header"></div>
+
+
+    <section id="loaderSection">
+        <div  class="loader">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+        </div>
+    </section>
+
+    <div class="box">
+        <div class="main_outlined-block">
+            <div class="container-split">
+                <div class="box">
+                    <div class="outlined-block">
+
+                        <P>Please enter the text you want to summmerize</p>
+
+                        <div class="upload-container">
+
+                            <h2>Upload PDF</h2>
+                            <form id="uploadForm" enctype="multipart/form-data">
+                                <input id="file" type="file" name="file" accept="application/pdf">
+                                <label for="file">Choose PDF File</label>
+                            </form>
+
+                        </div>
+
+                        <br>
+
+                        <h1>Settings</h1>
+                        <br>
+
+                        <div class="option-block">
+                            <div class="container-split2">
+                                <div class="box">
+                                    <label for="sumType">Type of summerization :</label>
+                                    <select id="sumType" class="styled-select">
+                                        <option value="Can you summarize this text">General sum</option>
+                                        <option value="Can you summarize this text and focus it on the method">
+                                            Method-oriented sum</option>
+                                        <option
+                                            value="Can you summarize this text and focus it on the goal of the article">
+                                            Goal-oriented sum</option>
+                                    </select>
+                                </div>
+
+                                <div class="box">
+                                    <label for="language">Language of summerization :</label>
+                                    <select id="language" class="styled-select">
+                                        <option value="en">English</option>
+                                        <option value="fr">French</option>
+                                        <option value="de">German</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <label for="KeyopenAI">OpenAi Key :</label>
+                                <input id="KeyopenAI" formcontrolname="mot_de_passe" placeholder="Enter your openAI Key"
+                                    aria-describedby="mdpHelp mdpErreur" type="password">
+                            </div>
+                        </div>
+                        <br>
+
+                        <button onclick="launchSummerize()" class="buttonLaunch">Launch summary</button>
+
+                    </div>
+                </div>
+
+
+
+                <div class="vertical-bar"></div>
+
+
+                <div class="box">
+                    <div class="outlined-block">
+
+                        <p>Text preview</p>
+
+                        <textarea placeholder="The sum" id="Summerized" rows="13" cols="100" disabled> </textarea>
+                        <br></br>
+
+                        <div id="translationResult">
+
+                            <p>Download your podcast</p>
+                            <a id="downloadButton" class="btn_download" onclick="downloadMP3()" download="">
+                                <h3>
+                                    <span class="glyphicon glyphicon-download-alt"></span>
+                                    <span id="download-button-content">Download MP3</span>
+                                </h3>
+                            </a>
+
+                            <p>Download your PDF</p>
+                            <a id="downloadButton" class="btn_download" onclick="downloadPDF()" download="">
+                                <h3>
+                                    <span class="glyphicon glyphicon-download-alt"></span>
+                                    <span id="download-button-content">Download PDF</span>
+                                </h3>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space-container">
+
+
+
+    </div>
+    <br> </br>
+    <br> </br>
+    <div id="footer"></div>
+</body>
+
+</html>
